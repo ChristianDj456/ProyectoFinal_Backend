@@ -1,5 +1,5 @@
 # Usa una imagen base de Python
-FROM python:3.10-slim
+FROM python:3.12
 
 # Establece el directorio de trabajo
 WORKDIR /app
@@ -8,7 +8,7 @@ WORKDIR /app
 COPY ./requirements.txt /app/requirements.txt
 
 # Instala las dependencias
-RUN pip install --no-cache-dir --upgrade -r ./requirements.txt
+RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 
 # Copia todo el código de la aplicación
 COPY . /app
