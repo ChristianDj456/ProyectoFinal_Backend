@@ -1,0 +1,9 @@
+﻿fastapi
+uvicorn
+pandas
+joblib
+matplotlib
+seaborn
+scikit-learn
+plotly
+pydantic
